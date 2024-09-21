@@ -1,0 +1,4 @@
+
+.your-carousel-class .carousel-item {
+  width: calc(100% / 3); /* Ajusta el ancho de cada elemento para mostrar 3 a la vez */
+}
