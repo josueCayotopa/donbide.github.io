@@ -15,3 +15,12 @@ nextBtn.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleButton = document.querySelector('[data-hs-collapse]');
+  const navbarCollapse = document.getElementById('navbar-collapse-with-animation');
+
+  toggleButton.addEventListener('click', function () {
+      navbarCollapse.classList.toggle('hidden');
+      toggleButton.classList.toggle('hs-collapse-open');
+  });
+});

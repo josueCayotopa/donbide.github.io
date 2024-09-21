@@ -15,6 +15,7 @@
 <body class="dark:bg-gray-900">
 
     <!-- Header -->
+
     <header
         class="flex z-50 sticky top-0 flex-wrap md:justify-start md:flex-nowrap w-full bg-white text-sm py-3 md:py-0 dark:bg-gray-800 shadow-md">
         <nav class="max-w-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8" aria-label="Global">
@@ -24,7 +25,6 @@
                         href="#" aria-label="Brand">
                         <span class="flex items-center">
                             <img src="./images/Rico Chips ok.png" alt="Logo" class="h-10">
-                            <!-- Ajusta la altura aquí -->
                         </span>
                     </a>
                     <div class="md:hidden">
@@ -32,7 +32,6 @@
                             class="hs-collapse-toggle flex justify-center items-center w-9 h-9 text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                             data-hs-collapse="#navbar-collapse-with-animation"
                             aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
-                            <!-- Icons for toggling menu -->
                             <svg class="hs-collapse-open:hidden flex-shrink-0 w-4 h-4"
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -71,167 +70,107 @@
                             class="font-medium text-gray-500 py-3 md:py-6 dark:text-gray-400 dark:hover:text-gray-500">Leche
                             de Tigre</a>
                         <div class="flex items-center">
-                            <button id="carrito-btn"
-                                class="flex items-center bg-yellow-500 text-gray-800 px-4 py-2 rounded-full hover:bg-yellow-400">
-                                <svg class="w-5 h-5 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M6 2L2 6h4l2 12h12" />
-                                    <circle cx="9" cy="21" r="1" />
-                                    <circle cx="19" cy="21" r="1" />
-                                </svg>
-                                Carrito (<span id="carrito-cantidad">0</span>)
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-    </header>
-
-    <!-- Main Content -->
-    <main class="max-w-[85rem] mx-auto px-4 md:px-6 lg:px-8 mt-3">
-        <!-- Home Section -->
-        <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto flex flex-col">
-                <!-- Featured Product Section -->
-                <div class="relative rounded-lg h-96 overflow-hidden w-full">
-                    <img alt="Producto destacado" class="object-cover object-center h-full w-full"
-                        src="./images/banner1.webp">
-                    <div class="absolute inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
-                        <div class="text-center text-white">
-                            <h2 class="text-4xl font-semibold mb-4">Chifle de Platano</h2>
-                            <p class="mb-6">Descubre las características y beneficios de nuestro producto más
-                                importante.</p>
-                            <a href="#"
-                                class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded">Más
-                                Información</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Featured Product Section -->
-
-                <!-- Company Information -->
-                <div class="lg:w-4/6 mx-auto mt-10">
-                    <div class="flex flex-col sm:flex-row">
-                        <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                            <div
-                                class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
-                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg>
-                            </div>
-                            <div class="flex flex-col items-center text-center justify-center">
-                                <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Nuestra Empresa</h2>
-                                <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
-                                <p class="text-base">DonBide es líder en el mercado, ofreciendo productos innovadores y
-                                    de alta calidad a nuestros clientes. Nos enfocamos en la excelencia, la
-                                    responsabilidad social y el bienestar de la comunidad.</p>
-                            </div>
-                        </div>
-                        <div
-                            class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                            <p class="leading-relaxed text-lg mb-4">Fundada en 1995, DonBide ha crecido para convertirse
-                                en una de las empresas más reconocidas en su sector. Nos dedicamos a crear soluciones
-                                que impacten positivamente la vida de las personas, mediante la innovación constante y
-                                el compromiso con la calidad. Nuestra misión es mejorar continuamente nuestros productos
-                                y servicios para satisfacer las necesidades cambiantes de nuestros clientes.</p>
-                            <a class="text-indigo-500 inline-flex items-center">Más Información
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            <a href="https://wa.me/51973357828?text=Hola,%20me%20interesan%20saber%20más%20sobre%20los%20chifles%20de%20Rico%20Chips"
+                                target="_blank"
+                                class="inline-flex justify-center items-center  text-base font-medium text-centerbg-yellow-500 text-gray-800 px-4 py-2 rounded-full hover:bg-yellow-400 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                                ¡Contáctanos!
+                                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                                 </svg>
                             </a>
                         </div>
                     </div>
                 </div>
-                <!-- End Company Information -->
             </div>
-        </section>
+        </nav>
+    </header>
 
+    <!-- Main Content -->
 
-
-
-        <!-- Clasico Section -->
-        <section id="clasico" class="py-10">
-            <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-6">RicoChips Clásico</h2>
-            <p class="mt-4 text-gray-600 dark:text-gray-400 mb-8">Nuestros chifles clásicos, crujientes y deliciosos.
+    <!-- Hero Section -->
+    <section class="bg-center bg-no-repeat bg-[url('./images/banner1.webp')] bg-gray-700 bg-blend-multiply">
+        <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+            <h1
+                class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white dark:text-yellow-400 md:text-5xl lg:text-6xl">
+                Rico
+                Chips - Sabores Únicos, Calidad Insuperable</h1>
+            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+                Chifles de plátano verde con los sabores que encantan: Picante, Leche de Tigre, Cecina y más. ¡Pide al
+                por mayor y lleva a tu negocio los mejores sabores del mercado!
             </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Producto 1 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="./images/chifle maduro.webp" alt="Chifles Clásicos 50g" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Chifles Clásicos 50g</h3>
-                        <p class="text-gray-600 mb-4">Perfectos para un snack rápido y sabroso.</p>
-                        <p class="text-lg font-bold mb-4">S/. 1.50</p>
-                        <button class="bg-yellow-500 text-gray-800 px-4 py-2 rounded-full hover:bg-yellow-400 w-full"
-                            onclick="agregarAlCarrito('Chifles Clásicos 50g', 1.50)">
-                            Agregar al carrito
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Producto 2 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="./images/cecina.webp" alt="Chifles Clásicos 100g" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Chifles Clásicos 100g</h3>
-                        <p class="text-gray-600 mb-4">Ideal para compartir con amigos y familia.</p>
-                        <p class="text-lg font-bold mb-4">S/. 2.50</p>
-                        <button class="bg-yellow-500 text-gray-800 px-4 py-2 rounded-full hover:bg-yellow-400 w-full"
-                            onclick="agregarAlCarrito('Chifles Clásicos 100g', 2.50)">
-                            Agregar al carrito
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Producto 3 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="./images/bolsa_transparente.jpg" alt="Chifles Clásicos 200g"
-                        class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Chifles Clásicos 200g</h3>
-                        <p class="text-gray-600 mb-4">Perfecto para fiestas y reuniones.</p>
-                        <p class="text-lg font-bold mb-4">S/. 4.00</p>
-                        <button class="bg-yellow-500 text-gray-800 px-4 py-2 rounded-full hover:bg-yellow-400 w-full"
-                            onclick="agregarAlCarrito('Chifles Clásicos 200g', 4.00)">
-                            Agregar al carrito
-                        </button>
-                    </div>
-                </div>
+            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+                <a href="https://wa.me/51973357828?text=Hola,%20me%20interesan%20saber%20más%20sobre%20los%20chifles%20de%20Rico%20Chips"
+                    target="_blank"
+                    class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-green-900 hover:bg-gray-600 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    ¡Contáctanos por WhatsApp!
+                    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+                <a href="#clasico"
+                    class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                    Ver Nuestros Sabores
+                </a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Maduro Section -->
-        <section id="maduro" class="py-10">
-            <h2 class="text-3xl font-bold text-gray-800 dark:text-white">RicoChips Maduro</h2>
-            <p class="mt-4 text-gray-600 dark:text-gray-400">Un toque dulce con la madurez perfecta.</p>
-        </section>
 
-        <!-- Picante Section -->
-        <section id="picante" class="py-10">
-            <h2 class="text-3xl font-bold text-gray-800 dark:text-white">RicoChips Picante</h2>
-            <p class="mt-4 text-gray-600 dark:text-gray-400">Para los que buscan un toque de picante.</p>
-        </section>
 
-        <!-- Casina Ahumada Section -->
-        <section id="ahumada" class="py-10">
-            <h2 class="text-3xl font-bold text-gray-800 dark:text-white">RicoChips Casina Ahumada</h2>
-            <p class="mt-4 text-gray-600 dark:text-gray-400">Sabor ahumado que te llevará a otro nivel.</p>
-        </section>
+    <div class="relative">
+        <!-- Sidebar Cart (now on the right) -->
+        <div id="cart-sidebar"
+            class="cart-sidebar closed fixed right-0 top-0 h-full w-80 bg-white shadow-lg z-50 overflow-y-auto">
+            <div class="p-4">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-xl font-bold">Tu Carrito</h2>
+                    <button id="close-cart" class="text-gray-500 hover:text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <ul id="carrito-lista" class="space-y-4"></ul>
+                <button id="enviar-pedido"
+                    class="mt-4 w-full px-4 py-2 bg-green-600 text-white text-base font-medium rounded-md shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-300">
+                    Enviar Pedido
+                </button>
+            </div>
+        </div>
 
-        <!-- Leche de Tigre Section -->
-        <section id="leche-de-tigre" class="py-10">
-            <h2 class="text-3xl font-bold text-gray-800 dark:text-white">RicoChips Leche de Tigre</h2>
-            <p class="mt-4 text-gray-600 dark:text-gray-400">El sabor peruano que no te puedes perder.</p>
-        </section>
-    </main>
+        <!-- Main Content -->
+        <main class="max-w-[85rem] mx-auto px-4 md:px-6 lg:px-8 mt-3">
+            <section id="clasico" class="py-10">
+                <h2 class="text-4xl font-extrabold text-yellow-700 mb-6 text-center">RicoChips Clásico</h2>
+                <p class="mt-4 text-gray-700 mb-8 text-center text-lg font-light">
+                    Nuestros chifles clásicos, crujientes y deliciosos, perfectos para cualquier ocasión.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="productos-container">
+                    <!-- Product items will be dynamically inserted here -->
+                </div>
+            </section>
+        </main>
 
+        <!-- Cart Toggle Button (now on the right) -->
+        <button id="cart-toggle"
+            class="fixed bottom-4 right-4 bg-yellow-500 text-gray-800 p-3 rounded-full hover:bg-yellow-400 shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            <span id="cart-count"
+                class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs">
+                0
+            </span>
+        </button>
+    </div>
     <!-- Footer -->
     <footer class="bg-gray-900 w-full">
         <div class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
@@ -334,33 +273,68 @@
             <!-- End Footer Bottom -->
         </div>
     </footer>
-    <div id="carrito-modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full hidden">
-        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
-            <div class="mt-3 text-center">
-                <h3 class="text-lg leading-6 font-medium text-gray-900">Tu Carrito</h3>
-                <div class="mt-2 px-7 py-3">
-                    <ul id="carrito-lista" class="text-sm text-gray-500"></ul>
-                </div>
-                <div class="mt-4 flex justify-between">
-                    <button id="cerrar-carrito" class="px-4 py-2 bg-gray-500 text-white text-base font-medium rounded-md shadow-sm hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300">
-                        Cerrar
-                    </button>
-                    <button id="enviar-pedido" class="px-4 py-2 bg-green-600 text-white text-base font-medium rounded-md shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-300">
-                        Enviar Pedido
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
 
+
+
+    <script src="/js/app.js"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.querySelector('[data-hs-collapse]');
+            const navbarCollapse = document.getElementById('navbar-collapse-with-animation');
+
+            toggleButton.addEventListener('click', function () {
+                navbarCollapse.classList.toggle('hidden');
+                toggleButton.classList.toggle('hs-collapse-open');
+            });
+        });
         let carrito = [];
-        const carritoBtn = document.getElementById('carrito-btn');
-        const carritoCantidad = document.getElementById('carrito-cantidad');
-        const carritoModal = document.getElementById('carrito-modal');
+        const productos = [
+            {
+                nombre: "Chifles Clásicos 50g",
+                precio: 1.50,
+                descripcion: "Perfectos para un snack rápido y sabroso.",
+                imagen: "./images/bolsa_transparente.jpg"
+            },
+            {
+                nombre: "Chifles Clásicos 100g",
+                precio: 2.50,
+                descripcion: "Ideal para compartir con amigos y familia.",
+                imagen: "./images/bolsa_transparente.jpg"
+            },
+            {
+                nombre: "Chifles Clásicos 200g",
+                precio: 4.00,
+                descripcion: "Perfecto para fiestas y reuniones.",
+                imagen: "./images/bolsa_transparente.jpg"
+            }
+        ];
+
+        const productosContainer = document.getElementById('productos-container');
         const carritoLista = document.getElementById('carrito-lista');
-        const cerrarCarritoBtn = document.getElementById('cerrar-carrito');
+        const cartSidebar = document.getElementById('cart-sidebar');
+        const closeCartBtn = document.getElementById('close-cart');
+        const cartToggleBtn = document.getElementById('cart-toggle');
+        const cartCountSpan = document.getElementById('cart-count');
         const enviarPedidoBtn = document.getElementById('enviar-pedido');
+
+        function renderProductos() {
+            productosContainer.innerHTML = productos.map((producto, index) => `
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+                    <img src="${producto.imagen}" alt="${producto.nombre}" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-2xl font-bold mb-2 text-yellow-800">${producto.nombre}</h3>
+                        <p class="text-gray-600 mb-4">${producto.descripcion}</p>
+                        <p class="text-xl font-bold text-yellow-700 mb-4">S/. ${producto.precio.toFixed(2)}</p>
+                        <button
+                            onclick="agregarAlCarrito('${producto.nombre}', ${producto.precio})"
+                            class="bg-yellow-500 text-gray-800 px-4 py-2 rounded-full hover:bg-yellow-400 hover:shadow-md transition w-full font-semibold"
+                        >
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
 
         function agregarAlCarrito(producto, precio) {
             const item = carrito.find(i => i.producto === producto);
@@ -370,86 +344,80 @@
                 carrito.push({ producto, precio, cantidad: 1 });
             }
             actualizarCarrito();
+            openCart();
+        }
+
+        function actualizarCantidad(index, delta) {
+            carrito[index].cantidad = Math.max(1, carrito[index].cantidad + delta);
+            actualizarCarrito();
+        }
+
+        function eliminarItem(index) {
+            carrito.splice(index, 1);
+            actualizarCarrito();
         }
 
         function actualizarCarrito() {
-            carritoCantidad.textContent = carrito.reduce((total, item) => total + item.cantidad, 0);
-            carritoLista.innerHTML = carrito.map(item => 
-                `<li>${item.producto} - Cantidad: ${item.cantidad} - $${(item.precio * item.cantidad).toFixed(2)}</li>`
-            ).join('');
+            carritoLista.innerHTML = carrito.map((item, index) => `
+                <li class="flex items-center justify-between">
+                    <span class="text-sm">${item.producto}</span>
+                    <div class="flex items-center space-x-2">
+                        <button onclick="actualizarCantidad(${index}, -1)" class="p-1 bg-gray-200 rounded">-</button>
+                        <span class="text-sm">${item.cantidad}</span>
+                        <button onclick="actualizarCantidad(${index}, 1)" class="p-1 bg-gray-200 rounded">+</button>
+                        <span class="text-sm">S/. ${(item.precio * item.cantidad).toFixed(2)}</span>
+                        <button onclick="eliminarItem(${index})" class="p-1 bg-red-500 text-white rounded">X</button>
+                    </div>
+                </li>
+            `).join('');
+
+            const totalItems = carrito.reduce((total, item) => total + item.cantidad, 0);
+            cartCountSpan.textContent = totalItems;
         }
 
-        carritoBtn.addEventListener('click', () => {
-            carritoModal.classList.remove('hidden');
-        });
+        function openCart() {
+            cartSidebar.classList.remove('closed');
+            cartSidebar.classList.add('open');
+        }
 
-        cerrarCarritoBtn.addEventListener('click', () => {
-            carritoModal.classList.add('hidden');
-        });
+        function closeCart() {
+            cartSidebar.classList.remove('open');
+            cartSidebar.classList.add('closed');
+        }
+
+        cartToggleBtn.addEventListener('click', openCart);
+        closeCartBtn.addEventListener('click', closeCart);
 
         enviarPedidoBtn.addEventListener('click', () => {
             let mensaje = "Hola, me gustaría hacer el siguiente pedido:\n\n";
             let total = 0;
             carrito.forEach(item => {
-                mensaje += `${item.cantidad}x ${item.producto} - $${(item.precio * item.cantidad).toFixed(2)}\n`;
+                mensaje += `${item.cantidad}x ${item.producto} - S/. ${(item.precio * item.cantidad).toFixed(2)}\n`;
                 total += item.precio * item.cantidad;
             });
-            mensaje += `\nTotal: $${total.toFixed(2)}`;
-            
-            // Reemplaza este número con el número de WhatsApp de tu negocio
-            let numeroWhatsApp = "51922045005";
-            
+            mensaje += `\nTotal: S/. ${total.toFixed(2)}`;
+
+            let numeroWhatsApp = "51973357828";
             let url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
             window.open(url, '_blank');
         });
+
+        // Initialize
+        renderProductos();
     </script>
-    <script src="./js/app.js"></script>
-    <script>
+    <!-- <section id="picante" class="py-10">
+            <h2 class="text-3xl font-bold text-gray-800 dark:text-white">RicoChips Picante</h2>
+            <p class="mt-4 text-gray-600 dark:text-gray-400">Para los que buscan un toque de picante.</p>
+        </section>
 
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        const carousel = document.getElementById('carousel');
+ 
+        <section id="ahumada" class="py-10">
+            <h2 class="text-3xl font-bold text-gray-800 dark:text-white">RicoChips Casina Ahumada</h2>
+            <p class="mt-4 text-gray-600 dark:text-gray-400">Sabor ahumado que te llevará a otro nivel.</p>
+        </section>
 
-        let scrollAmount = 0;
 
-        nextBtn.addEventListener('click', () => {
-            scrollAmount += 200; // Cambia 200 por el ancho del producto + margen
-            carousel.scrollTo({ left: scrollAmount, behavior: 'smooth' });
-        });
-
-        prevBtn.addEventListener('click', () => {
-            scrollAmount -= 200; // Cambia 200 por el ancho del producto + margen
-            carousel.scrollTo({ left: scrollAmount, behavior: 'smooth' });
-        });
-    </script>
-    <script>
-        let carrito = [];
-
-        function agregarAlCarrito(producto, cantidad) {
-            carrito.push({ producto, cantidad });
-            actualizarCarrito();
-        }
-
-        function actualizarCarrito() {
-            console.log(carrito); // Aquí puedes actualizar la UI del carrito
-        }
-
-        function enviarPedidoWhatsApp() {
-            let mensaje = "Hola, me gustaría hacer el siguiente pedido:\n\n";
-            carrito.forEach(item => {
-                mensaje += `${item.cantidad}x ${item.producto}\n`;
-            });
-
-            // Reemplaza este número con el número de WhatsApp de tu negocio
-            let numeroWhatsApp = "1234567890";
-
-            let url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
-            window.open(url, '_blank');
-        }
-
-        // Inicializar el carrusel
-
-    </script>
-</body>
-
-</html>
+        <section id="leche-de-tigre" class="py-10">
+            <h2 class="text-3xl font-bold text-gray-800 dark:text-white">RicoChips Leche de Tigre</h2>
+            <p class="mt-4 text-gray-600 dark:text-gray-400">El sabor peruano que no te puedes perder.</p>
+        </section> -->
